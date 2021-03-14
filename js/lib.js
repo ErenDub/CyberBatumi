@@ -22,3 +22,14 @@ function mobileMenu (){
 	}
 }
 menuBorder.innerHTML += document.getElementById ('header-nav').innerHTML;
+
+var totop = document.getElementById ('to-top');
+document.addEventListener ("scroll", function (){
+	var scrollvalue = scrollY;
+	if (scrollvalue > 200) {
+		totop.style.display = "block";
+	}
+	else{
+		totop.style.display = "none";
+	}
+})
