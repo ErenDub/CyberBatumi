@@ -121,6 +121,10 @@
 }
 .workers-item img{
 	width: 200px;
+	transition: transform 0.2s;
+}
+.workers-item img:hover{
+	transform: scale(1.08);
 }
 .workers-name{
 	margin: auto;
@@ -334,6 +338,17 @@
 	.contacts-left-item{
 		display: block;
 	}
+	.workers-item img:hover{
+		transform: none;
+	}
+	.contacts-input input{
+		width: 100%;
+		border-bottom: 1px solid #9B9B9B;
+	}
+	.contacts-input input:last-child{
+		width: 100%;
+	}
+
 }
 @media screen and (max-width: 320px){
 	.article-item img, .workers-item img, #double-img img, #about-us img:nth-child(even) {
