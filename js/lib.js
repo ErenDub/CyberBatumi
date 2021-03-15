@@ -36,6 +36,14 @@ document.addEventListener ("scroll", function (){
 var f = 0;
 function workers (wid) {
 	var workersID = document.getElementById (wid);
+	var workerClose = document.getElementsByClassName ('popup')
+	if (f != 0){
+		for (var i = 0; i < workerClose.length; i++){
+			workerClose[i].style.display = 'none';
+		}
+		workersID.style.display = 'block';
+	}
+
 	if (f == 0){
 		workersID.style.display = 'block';
 		f++;
