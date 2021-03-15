@@ -33,3 +33,15 @@ document.addEventListener ("scroll", function (){
 		totop.style.display = "none";
 	}
 })
+var f = 0;
+function workers (wid) {
+	var workersID = document.getElementById (wid);
+	if (f == 0){
+		workersID.style.display = 'block';
+		f++;
+	}
+	else{
+		workersID.style.display = 'none';
+		f--;
+	}
+}
